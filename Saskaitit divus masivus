@@ -1,0 +1,21 @@
+#include <iostream>
+int main() {
+    
+    int Masivs1[10];
+    int Masivs2[10];
+    int c = 0;
+    
+    std::cout << "1. Masīva:" << std::endl;
+    for(int i = 0; i < 10; i++) {
+        std::cin >> Masivs1[i];
+}
+    std::cout << "2. Masīva:" << std::endl;
+    for(int i = 0; i < 10; i++) {
+        std::cin >> Masivs2[i];
+}
+    std::cout << "Masīvu reizinājumi:" << std::endl;
+    for(int i = 0; i < 10; i++) {
+        c = Masivs1[i] + Masivs2[i];
+        std::cout << c << std::endl;
+    }
+}
