@@ -1,0 +1,25 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+
+double compare(double first, double second){
+    if (first > second){
+       std::cout << first << " > " << second << std::endl;
+    } else if(first == second){
+       std::cout << first << " = " << second << std::endl;
+    }
+    else{
+        std::cout << first << " < " << second << std::endl;
+    }
+}
+
+int main() {
+    double first = 0;
+    double second = 0;
+    std::cout << "Ievadiet 1. skaitli: " << std::endl;
+    std::cin >> first;
+    std::cout << "Ievadiet 2. skaitli :" << std::endl;
+    std::cin >> second;
+    
+    std::cout << "Salīdzinājums: " << std::endl;
+    compare(first, second);
+}
